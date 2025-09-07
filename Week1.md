@@ -101,7 +101,7 @@ SQL 쿼리를 작성하기 전에 생각해야 할 것<br>
 
 ---
 # 2️⃣ 학습 인증란
-![학습인증1](SQL_basic week1-2.png)
+![학습인증1](./SQL_basic week1-2.png)
 
 
 <br>
