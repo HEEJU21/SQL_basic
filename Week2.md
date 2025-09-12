@@ -46,7 +46,15 @@
 * SELECT, FROM, WHERE의 핵심 문법을 설명할 수 있다. 
 ~~~
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+SQL 쿼리 구조 : SELECT -> FROM -> WHERE<br>
+SQL 핵심 문법 <br>
+FROM : 데이터를 확인할 table 명시, 이름이 너무 길다면 AS "별칭"으로 별칭 지정 가능 
+
+WHERE : FROM에 명시된 Table에 저장된 데이터를 필터링(조건설정), Table에 있는 컬럼을 조건 설정
+
+SELECT : Table에 저장되어 있는 컬럼 선택,  여러 컬럼 명시 가능, col1 AS "별칭" 으로 컬럼의 이름도 별칭 지정 가능
+
+tab이나 enter 로 협업 시 알아보기 쉽게 쿼리문 작성하기 
 
 
 ## 2-5. 집계 (Group By / HAVING / SUM,COUNT)
@@ -58,7 +66,18 @@
 * having과 where의 차이에 대해서 설명할 수 있다.
 ~~~
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+집계와 그룹화 : 모아서 계산하는 것 GROUP BY : 같은 값끼리 모아서 그룹화 COUNT : row 를 세는것 <br>
+집계하고 싶은 경우 : GROUP BY + 집계함수(AVG,MAX 등)
+
+고유값을 알고싶은 경우: DISTINCT
+
+조건을 설정하고 싶은 경우 : WHERE / HAVING
+
+정렬하고 싶은 경우 : ORDER BY 
+
+출력 개수를 제한하고 싶은 경우 : LIMIT 
+
+WHERE : Raw Data 인 데이터에 조건 바로 설정 / HAVING : GROUP BY 한 후 조건 설정 
 
 
 
@@ -90,7 +109,13 @@ FROM pokemon;
 
 
 ~~~
-여기에 답을 작성해주세요!
+AS 다음 '' 를 쓰지 않는다. SELECT 다음에는 FROM 이 위치한다. 세미콜론은 쿼리의 끝에만 사용한다. 
+SELECT 
+    name AS 포켓몬 이름,
+    ID
+FROM basic.pokemon
+WHERE 
+    type = 'Electric';
 ~~~
 
 
@@ -109,7 +134,12 @@ GROUP BY type;
 
 
 ~~~
-여기에 답을 작성해주세요.
+group by 한 후 조건을 설정하였기 때문에 HAVING 을 사용하여야 한다. 
+SELECT 
+    type, AVG(attack) AS avg_attack
+FROM pokemon
+GROUP BY type 
+HAVING AVG(attack) >= 60;
 ~~~
 
 
