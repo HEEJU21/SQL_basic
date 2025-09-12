@@ -83,7 +83,7 @@ WHERE : Raw Data 인 데이터에 조건 바로 설정 / HAVING : GROUP BY 한 �
 
 # 2️⃣ 학습 인증란
 
-<!-- 이 글을 지우고, 여기에 학습한 것을 인증해주세요.-->
+![학습인증](https://github.com/HEEJU21/asset/blob/main/SQL_2.png)
 
 
 
