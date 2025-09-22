@@ -223,7 +223,7 @@ GROUP BY 함수를 사용할 때 컬럼명을 명시해야 하는데, GROUP BY A
 ---
 
 # 2️⃣ 학습 인증란
-
+![학습인증란](https://github.com/HEEJU21/asset/blob/main/SQL_week3.png)
 
 
 
