@@ -107,7 +107,10 @@ SELECT
 * 4-5, 4-7 각각에서 두 문제 이상 (최소 4문제) 푼 내용 정리하기
 ~~~
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+![문제1](https://github.com/HEEJU21/asset/blob/main/SQL_1.png)
+![문제2](https://github.com/HEEJU21/asset/blob/main/SQL_2.png)
+![문제3](https://github.com/HEEJU21/asset/blob/main/SQL_3.png)
+![문제4](https://github.com/HEEJU21/asset/blob/main/SQL_4.png)
 
 
 
