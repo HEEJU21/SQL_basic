@@ -58,9 +58,15 @@
 * CURRENT_TIME, EXTRACT, DATETIME_TRUNC, PARSE_DATETIME, FROMAT_DATETIME 을 설명할 수 있다. 
 ~~~
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+**DATETIME 함수 - EXTRACT** : DATETIME에서 특정 부분만 추출하고 싶은 경우(ex. 요일을 추출하고 싶은 경우: EXTRACT(DAYOFWEEK FROM datetime_col))
 
+**DATETIME 함수 - TRUNC** : 시간 자르기(ex.DATE 과 HOUR만 남기고 싶을 때)
 
+**DATETIME 함수 - PARSE_DATETIME** : 문자열로 저장된 DATETIME 을 DATETIME 타입으로 바꾸고 싶을 때 <-> 반대의 경우는 FORMAT_DATETIME
+
+**DATETIME 함수 - LAST DAY** : 마지막 날을 알고 싶은 경우. 자동으로 월의 마지막 값을 계산해서 특정 연산을 할 경우
+
+**DATETIME 함수 - DATETIME_DIFF** : 두 DATETIME 의 차이를 알고 싶은 경우 
 
 # 4-6. 조건문(CASE WHEN, IF)
 
@@ -69,9 +75,22 @@
 * 조건문 함수의 기능을 이해하고, 설명할 수 있다. 
 ~~~
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+**조건문**: 만약 특정 조건이 충족되면, 어떤 행동을 하자. 특정 조건이 참일 때 A, 아니면 B. 조건에 따른 분기 처리가 필요한 경우. 조건에 따라 다른 값을 표시하고 싶을 때 사용. 
+조건문을 사용하는 방법
+1. CASE WHEN 2. IF 
+**CASE WHEN**: 여러 조건이 있을 경우 유용
+SELECT
+ CASE
+  WHEN 조건1 THEN 조건 1이 참일 경우 결과
+  WHEN 조건2 THEN 조건2가 참일 경우 결과,
+  ELSE 그 외 조건일 경우 결과
+END AS 새로우 컬럼_이름
 
-
+**IF**: 단일 조건일 경우 유용
+문법: IF(조건문,True 일 때의 값, False일 떄의 값) AS 새로운_컬럼_이름
+SELECT
+ IF(1=1, '동일한 결과','동일하지 않은 결과') AS result1,
+ IF(1=2, '동일한 결과','동일하지 않은 결과') AS result2
 
  # 4-5. 시간 데이터 연습문제 & 4-7. 조건문 연습 문제
 
