@@ -80,16 +80,24 @@
 1. CASE WHEN 2. IF 
 **CASE WHEN**: 여러 조건이 있을 경우 유용
 SELECT
+
  CASE
+ 
   WHEN 조건1 THEN 조건 1이 참일 경우 결과
+  
   WHEN 조건2 THEN 조건2가 참일 경우 결과,
   ELSE 그 외 조건일 경우 결과
+  
 END AS 새로우 컬럼_이름
 
 **IF**: 단일 조건일 경우 유용
+
 문법: IF(조건문,True 일 때의 값, False일 떄의 값) AS 새로운_컬럼_이름
+
 SELECT
+
  IF(1=1, '동일한 결과','동일하지 않은 결과') AS result1,
+ 
  IF(1=2, '동일한 결과','동일하지 않은 결과') AS result2
 
  # 4-5. 시간 데이터 연습문제 & 4-7. 조건문 연습 문제
