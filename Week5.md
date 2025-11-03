@@ -178,11 +178,10 @@ FROM pokemon;
 | Squirtle   | Water     |
 | Bulbasaur  | Grass     |
 
-type1이 'Fire'나 'Water'가 아닌 경우 ELSE 'Normal'이 적용된다.
-따라서 **Pikachu(Electric)**와 **Bulbasaur(Grass)**의 type_description은 'Normal'이다.
 
 ~~~
-여기에 답을 작성해주세요!
+type1이 'Fire'나 'Water'가 아닌 경우 ELSE 'Normal'이 적용된다.
+따라서 **Pikachu(Electric)**와 **Bulbasaur(Grass)**의 type_description은 'Normal'이다.
 ~~~
 
 
