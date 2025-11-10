@@ -55,7 +55,13 @@
 * JOIN에 대한 정의와 필요성에 대해 설명할 수 있다.
 ~~~
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+두 데이터를 연결할 수 있는 공통값이 JOIN 할 수 있는 KEY
+
+**JOIN이란** 간단하게 서로 다른 테이블을 연결하는 것. 
+
+JOIN 을 해야하는 이유
+
+관계형 데이터베이스 설계시 정규화 과정을 거치는데 정규화는 중복을 최소화하게 데이터를 구조화함. User Table 은 유저 데이터만, Order Table 은 주문 데이터 이런식으로. 따라서 데이터를 다양한 Table 에 저장해서 필요할 때 JOIN 해서 사용하는 것. 데이터 분석하는 관점에서는 미리 JOIN 되어 있는 것이 좋을 수도 있지만, 개발 관점에서는 분리되어 있는 것이 좋음. 대신 데이터 웨어하우스에서 JOIN + 필요한 연산을 사용해서 데이터마트를 만들어서 활용. 
 
 
 
@@ -67,7 +73,15 @@
 * 각 JOIN 방법들의 차이점에 대해서 설명할 수 있다. 
 ~~~
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+**다양한 JOIN의 방법**
+
+INNER JOIN: 두 테이블의 공통 요소만 연결
+
+LEFT/RIGHT JOIN: 왼쪽/오른쪽 테이블 기준으로 연결
+
+FULL JOIN: 양쪽 기준으로 연결
+
+CROSS JOIN: 두 테이블의 각각의 요소를 곱하기 
 
 
 
@@ -79,7 +93,25 @@
 * JOIN 을 활용한 쿼리를 작성할 수 있다. 
 ~~~
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+**테이블 확인:** 테이블에 지정된 데이터, 컬럼 확인
+
+**기준 테이블 정의:** 가장 많이 참고할 기준 테이블 정의
+
+**JOIN KEY 찾기:** 여러 Table 과 연결할 KEY 정리
+
+**결과 예상하게:** 결과 테이블을 예상해서 손, 엑셀로 작성
+
+**쿼리 작성/검증:** 예상한 결과와 동일한 결과가 나오는지 확인 
+'''
+SELECT
+  A.col1,
+  A.col2,
+  B.col11,
+  B.col12
+FROM table1 AS A
+LEFT JOIN table2 AS B
+ON A.key = B.key 
+'''
 
 
 
@@ -90,7 +122,9 @@
 * 연습문제(3문제 이상) 푼 것들 정리하기
 ~~~
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+![1](https://github.com/HEEJU21/asset/blob/main/6_SQL.png)
+![2](https://github.com/HEEJU21/asset/blob/main/6_SQL2.png)
+![3](https://github.com/HEEJU21/asset/blob/main/6_SQL3.png)
 
 
 
@@ -112,8 +146,8 @@ https://school.programmers.co.kr/learn/courses/30/lessons/144854
 
 > 조건에 맞는 도서와 저자 리스트 출력하기 (JOIN)
 
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. --> 
-
+![1](https://github.com/HEEJU21/asset/blob/main/PROG1.png)
+![2](https://github.com/HEEJU21/asset/blob/main/PROG2.png)
 
 
 ---
