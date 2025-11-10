@@ -102,7 +102,7 @@ CROSS JOIN: 두 테이블의 각각의 요소를 곱하기
 **결과 예상하게:** 결과 테이블을 예상해서 손, 엑셀로 작성
 
 **쿼리 작성/검증:** 예상한 결과와 동일한 결과가 나오는지 확인 
-'''
+~~~ sql
 SELECT
   A.col1,
   A.col2,
@@ -111,7 +111,7 @@ SELECT
 FROM table1 AS A
 LEFT JOIN table2 AS B
 ON A.key = B.key 
-'''
+~~~
 
 
 
